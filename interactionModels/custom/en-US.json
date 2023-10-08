@@ -1,0 +1,70 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": [
+            "no thanks",
+            "no thank you",
+            "nothing",
+            "nope",
+            "no"
+          ]
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "slots": [],
+          "name": "HelloWorldIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "slots": [
+            {
+              "name": "question",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "name": "AskChatGPTIntent",
+          "samples": [
+            "chatbot {question}",
+            "tell me about {question}",
+            "can you tell us about {question}",
+            "get me a {question}",
+            "can you show me the {question}",
+            "and show me {question}",
+            "tell me the {question}",
+            "so tell me {question}",
+            "can you tell the {question}",
+            "tell me a {question}",
+            "can you give me the {question}",
+            "show me a {question}",
+            "can you get me {question}",
+            "get me {question}",
+            "can you tell us {question}",
+            "show me {question}",
+            "give me {question}",
+            "tell me {question}"
+          ]
+        }
+      ],
+      "types": [],
+      "invocationName": "wake sally"
+    }
+  }
+}
