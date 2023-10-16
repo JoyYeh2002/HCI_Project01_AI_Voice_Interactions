@@ -4,13 +4,7 @@
       "intents": [
         {
           "name": "AMAZON.CancelIntent",
-          "samples": [
-            "no thanks",
-            "no thank you",
-            "nothing",
-            "nope",
-            "no"
-          ]
+          "samples": []
         },
         {
           "name": "AMAZON.HelpIntent",
@@ -22,8 +16,18 @@
         },
         {
           "slots": [],
-          "name": "HelloWorldIntent",
-          "samples": []
+          "name": "DestinationIntent",
+          "samples": [
+            "new places to go",
+            "tell me what is in the area",
+            "destinations nearby",
+            "what is there to do",
+            "what is nearby",
+            "where can I go",
+            "give me a new destination",
+            "what are some cool places to visit",
+            "recommend places down the street"
+          ]
         },
         {
           "name": "AMAZON.NavigateHomeIntent",
@@ -36,35 +40,202 @@
         {
           "slots": [
             {
+              "name": "food",
+              "type": "AMAZON.Food"
+            },
+            {
+              "name": "foodestablishment",
+              "type": "AMAZON.FoodEstablishment"
+            }
+          ],
+          "name": "FoodIntent",
+          "samples": [
+            "meal",
+            "munch",
+            "dining",
+            "dine",
+            "chow",
+            "{foodestablishment} restaurant",
+            "{foodestablishment} ",
+            "food options in {food}",
+            "{food}",
+            "{food} restaurant ",
+            "find restaurant",
+            "go get dinner",
+            "go out to eat",
+            "breakfast",
+            "eat",
+            "lunch",
+            "dinner",
+            "food"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "musicevent",
+              "type": "AMAZON.MusicEvent"
+            },
+            {
+              "name": "musicvenue",
+              "type": "AMAZON.MusicVenue"
+            },
+            {
+              "name": "theater",
+              "type": "AMAZON.MovieTheater"
+            },
+            {
+              "name": "festival",
+              "type": "AMAZON.Festival"
+            }
+          ],
+          "name": "ArtIntent",
+          "samples": [
+            "go to {festival} ",
+            "{festival}",
+            "{theater}",
+            "go to {theater} ",
+            "what {musicvenue} is there",
+            "{musicvenue} ",
+            "{musicevent} ",
+            "places to see {musicevent}",
+            "see a play",
+            "go to a performance",
+            "theater",
+            "see something musical",
+            "music",
+            "singing",
+            "see a show",
+            "performance"
+          ]
+        },
+        {
+          "slots": [],
+          "name": "ReviewIntent",
+          "samples": [
+            "do people like or dislike it",
+            "is it any good",
+            "how good",
+            "rating",
+            "reviews",
+            "does it have good reviews",
+            "what are its ratings",
+            "do people like it",
+            "how good is it"
+          ]
+        },
+        {
+          "slots": [],
+          "name": "TimeIntent",
+          "samples": [
+            "what time is the event",
+            "when will it be",
+            "what time does it begin",
+            "what time is it",
+            "what time does it start",
+            "when does it begin",
+            "when does it start",
+            "when is it"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "city",
+              "type": "AMAZON.AT_CITY"
+            }
+          ],
+          "name": "GenericVisitIntent",
+          "samples": [
+            "what is there to do in {city}"
+          ]
+        },
+        {
+          "slots": [
+            {
               "name": "question",
               "type": "AMAZON.SearchQuery"
             }
           ],
           "name": "AskChatGPTIntent",
           "samples": [
-            "chatbot {question}",
+            "tell me {question} ",
+            "can you show me the {question} ",
+            "get me a {question} ",
+            "can you tell us about {question} ",
             "tell me about {question}",
-            "can you tell us about {question}",
-            "get me a {question}",
-            "can you show me the {question}",
-            "and show me {question}",
-            "tell me the {question}",
-            "so tell me {question}",
-            "can you tell the {question}",
-            "tell me a {question}",
-            "can you give me the {question}",
-            "show me a {question}",
-            "can you get me {question}",
-            "get me {question}",
-            "can you tell us {question}",
-            "show me {question}",
-            "give me {question}",
-            "tell me {question}"
+            "chatbot {question}"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "location",
+              "type": "AMAZON.City"
+            }
+          ],
+          "name": "LocationIntent",
+          "samples": [
+            "{location} "
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "sport",
+              "type": "AMAZON.Sport"
+            },
+            {
+              "name": "sportsevent",
+              "type": "AMAZON.SportsEvent"
+            }
+          ],
+          "name": "SportIntent",
+          "samples": [
+            "find me {sportsevent} ",
+            "how can I find {sportsevent} ",
+            "where can i see {sportsevent} ",
+            "{sportsevent} ",
+            "find me {sport} ",
+            "where can i see {sport} ",
+            "{sport} "
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "event",
+              "type": "AMAZON.EventType"
+            },
+            {
+              "name": "landmarks",
+              "type": "AMAZON.LandmarksOrHistoricalBuildings"
+            },
+            {
+              "name": "localbusiness",
+              "type": "AMAZON.LocalBusiness"
+            },
+            {
+              "name": "localbusienesstype",
+              "type": "AMAZON.LocalBusinessType"
+            },
+            {
+              "name": "organization",
+              "type": "AMAZON.Organization"
+            }
+          ],
+          "name": "TouristIntent",
+          "samples": [
+            "{organization} ",
+            "{localbusienesstype} ",
+            "{localbusiness} ",
+            "{landmarks} ",
+            "{event} "
           ]
         }
       ],
       "types": [],
-      "invocationName": "wake sally"
+      "invocationName": "vacay planner"
     }
   }
 }
