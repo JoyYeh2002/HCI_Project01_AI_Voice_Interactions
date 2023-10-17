@@ -1,0 +1,340 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "slots": [],
+          "name": "DestinationIntent",
+          "samples": [
+            "Suggest a fun destination",
+            "I need some travel inspiration",
+            "Find me exciting places to explore",
+            "Tell me about interesting destinations",
+            "What's worth visiting in the area?",
+            "Give me travel recommendations",
+            "Where should I go for a day trip?",
+            "Discover new and cool places to check out",
+            "Recommend a nearby destination",
+            "What are some hidden gems to discover?",
+            "I'm looking for unique travel ideas",
+            "Where can I go for a short getaway?",
+            "Show me local attractions and destinations",
+            "Give me ideas for a weekend trip",
+            "Tell me about off-the-beaten-path destinations",
+            "I'm in search of adventure, where should I go?",
+            "Find me a great place for a day out",
+            "Suggest a destination for a family outing"
+          ]
+        },        
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": [
+            "Take me home",
+            "I want to go home",
+            "Navigate to my house",
+            "Go back to my place",
+            "Return me to my home",
+            "Get directions to my home",
+            "Bring me back home",
+            "Start heading home",
+            "Navigate back to my house",
+            "Guide me to my home",
+            "I need to travel home",
+            "Direct me to my place",
+            "Home, please",
+            "Take me back to my house"
+          ]
+        },        
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "slots": [
+            {
+              "name": "food",
+              "type": "AMAZON.Food"
+            },
+            {
+              "name": "foodestablishment",
+              "type": "AMAZON.FoodEstablishment"
+            }
+          ],
+          "name": "FoodIntent",
+          "samples": [
+            "meal",
+            "munch",
+            "dining",
+            "dine",
+            "chow",
+            "{foodestablishment} restaurant",
+            "{foodestablishment}",
+            "food options in {food}",
+            "{food}",
+            "{food} restaurant",
+            "find restaurant",
+            "go get dinner",
+            "go out to eat",
+            "breakfast",
+            "eat",
+            "lunch",
+            "dinner",
+            "food",
+            "Find {food} places.",
+            "Tell me about {food} restaurants.",
+            "I'm hungry for {food}.",
+            "Recommend a {foodestablishment} restaurant.",
+            "Where can I grab {food}?",
+            "Dining options for {food}.",
+            "Best {foodestablishment} near me.",
+            "Suggest a good {food} place.",
+            "I want to eat {food}.",
+            "I'm in the mood for something delicious. Can you suggest a {food} restaurant nearby?",
+            "I'm planning a special night out. Where can I find a top-rated {food} place for dinner?",
+            "I'm looking for a family-friendly restaurant serving {food}. Any recommendations?",
+            "I want to explore local cuisines. Can you suggest some unique {food} options in this area?",
+            "I have friends coming over, and I need to order some {food}. What's the best place for delivery?",
+            "I'm a foodie, and I love trying new things. Tell me about the latest food trends in {food}.",
+            "I have a craving for some comfort food. Where can I get a delicious {food} meal?",
+            "I'm on a tight budget but still want to enjoy good food. Any affordable {food} options you can suggest?",
+            "I'm in charge of planning our office lunch outing. What's a popular {food} restaurant for a group."
+          ]
+        },        
+        {
+          "slots": [
+            {
+              "name": "musicevent",
+              "type": "AMAZON.MusicEvent"
+            },
+            {
+              "name": "musicvenue",
+              "type": "AMAZON.MusicVenue"
+            },
+            {
+              "name": "theater",
+              "type": "AMAZON.MovieTheater"
+            },
+            {
+              "name": "festival",
+              "type": "AMAZON.Festival"
+            }
+          ],
+          "name": "ArtIntent",
+          "samples": [
+            "go to {festival}",
+            "{festival}",
+            "{theater}",
+            "go to {theater}",
+            "what {musicvenue} is there",
+            "{musicvenue}",
+            "{musicevent}",
+            "places to see {musicevent}",
+            "see a play",
+            "go to a performance",
+            "theater",
+            "see something musical",
+            "music",
+            "singing",
+            "see a show",
+            "performance",
+            "Find a {musicvenue} near me.",
+            "I'm in the mood for a {musicevent} tonight.",
+            "Tell me about {theater} showtimes.",
+            "Is there a {festival} happening soon?",
+            "I want to catch a {musicvenue} event.",
+            "Where can I enjoy some live {musicevent}?",
+            "Recommend a {festival} for me.",
+            "Suggest a {musicvenue} for a night out.",
+            "I'm looking for a {theater} play to attend.",
+            "I need information on {musicevent} performances.",
+            "What's the schedule for {festival}?",
+            "Are there any upcoming {musicvenue} shows?",
+            "I'd like to see a {theater} performance this weekend.",
+            "I'm a fan of {musicevent}. What's on the calendar?"
+          ]
+        },        
+        {
+          "slots": [],
+          "name": "ReviewIntent",
+          "samples": [
+            "Any reviews?",
+            "Opinions?",
+            "Customer feedback?",
+            "How's it rated?",
+            "User satisfaction?",
+            "Overall rating?",
+            "Positive reviews?",
+            "Any negatives?",
+            "Public opinion?",
+            "Consensus on quality?",
+            "User opinions?",
+            "Reputation?",
+            "Satisfaction level?",
+            "Feedback from customers?",
+            "Any comments?",
+            "General sentiment?",
+            "Popularity?",
+            "Rank in satisfaction?"
+          ]
+        },        
+        {
+          "slots": [],
+          "name": "TimeIntent",
+          "samples": [
+            "what time is the event",
+            "when will it be",
+            "what time does it begin",
+            "what time is it",
+            "what time does it start",
+            "when does it begin",
+            "when does it start",
+            "when is it"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "city",
+              "type": "AMAZON.AT_CITY"
+            }
+          ],
+          "name": "GenericVisitIntent",
+          "samples": [
+            "Activities in {city}?",
+            "Explore {city}. Suggestions?",
+            "Attractions in {city}?",
+            "What's to do in {city}?",
+            "Visit {city}. Recommendations?",
+            "Travel tips for {city}?",
+            "Local scene in {city}?",
+            "Things to do in {city}?"
+          ]
+        },        
+        {
+          "slots": [
+            {
+              "name": "question",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "name": "AskChatGPTIntent",
+          "samples": [
+            "Tell me {question}",
+            "Show me the {question}",
+            "Get {question}",
+            "Tell me about {question}",
+            "Explain {question}",
+            "Chatbot, {question}",
+            "What's {question}?",
+            "Inform me about {question}",
+            "{question} details",
+            "Define {question}"
+          ]
+        },        
+        {
+          "slots": [
+            {
+              "name": "location",
+              "type": "AMAZON.City"
+            }
+          ],
+          "name": "LocationIntent",
+          "samples": [
+            "{location} "
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "sport",
+              "type": "AMAZON.Sport"
+            },
+            {
+              "name": "sportsevent",
+              "type": "AMAZON.SportsEvent"
+            }
+          ],
+          "name": "SportIntent",
+          "samples": [
+            "Tell me about {sportsevent}",
+            "How to find {sportsevent}?",
+            "I'm looking for information on {sportsevent}.",
+            "When is the {sportsevent} happening?",
+            "What's the latest {sportsevent} news?",
+            "Find me {sport} events.",
+            "Where can I see {sport} matches?",
+            "I want to watch {sport} games.",
+            "Tell me about {sport}.",
+            "I'm interested in {sport}.",
+            "What's the latest in {sport}?",
+            "Where can I catch {sport} matches?",
+            "Tell me about {sportsevent} near me.",
+            "What's the schedule for {sportsevent}?",
+            "I'm a fan of {sport}.",
+            "Where can I see {sportsevent} live?"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "event",
+              "type": "AMAZON.EventType"
+            },
+            {
+              "name": "landmarks",
+              "type": "AMAZON.LandmarksOrHistoricalBuildings"
+            },
+            {
+              "name": "localbusiness",
+              "type": "AMAZON.LocalBusiness"
+            },
+            {
+              "name": "localbusienesstype",
+              "type": "AMAZON.LocalBusinessType"
+            },
+            {
+              "name": "organization",
+              "type": "AMAZON.Organization"
+            }
+          ],
+          "name": "TouristIntent",
+          "samples": [
+            "Tell me about {organization}.",
+            "Explore {localbusienesstype}.",
+            "Show me {localbusiness}.",
+            "What can you tell me about {landmarks}?",
+            "What's happening in {event}?",
+            "I'd like to learn about {organization}.",
+            "Guide me to {localbusiness}.",
+            "I'm interested in {landmarks}.",
+            "Tell me about upcoming {event}.",
+            "Share details about {localbusienesstype}.",
+            "What's special about {organization}?",
+            "Find {landmarks} nearby.",
+            "What's the buzz about {event}?",
+            "I want to visit {localbusiness}.",
+            "Show me {localbusiness} options.",
+            "Tell me more about {localbusiness}.",
+            "I'm intrigued by {organization}.",
+            "What's unique about {landmarks}?",
+            "I'm looking for events like {event}."
+          ]
+        }        
+      ],
+      "types": [],
+      "invocationName": "vacay planner"
+    }
+  }
+}
